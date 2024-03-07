@@ -12,18 +12,34 @@
       background-color: purple;
     }
 
+
+    /*
+flex container
+    */
+    section {
+      display: flex;
+
+      /*
+justify content: start | center | end | space-between | space-around
+
+align-items: start | center | end
+
+flex-wrap: nowrap | wrap
+    */
+
+    flex-wrap: wrap-reverse;
+ 
+    }
+
+    /*
+flex item
+    */
     div {
       background-color: orange;
       border-radius: 4px;
-      margin: 20px;
+      min-width: 100px;
+      height: 100px;
     }
-
-
-
-    section{
-      display: flex;
-    }
-
   </style>
 </head>
 
@@ -40,6 +56,9 @@
     <div>Item 1</div>
     <div>Item 2</div>
     <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+    <div>Item 6</div>
   </section>
 
 </body>

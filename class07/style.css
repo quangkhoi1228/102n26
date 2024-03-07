@@ -1,26 +1,43 @@
 header {
   background-color: white;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
 
-nav {
-  float: right;
-  height: 30px;
 }
 
 .logo-image {
   height: 30px;
 }
 
+nav{
+  margin-right: 10px;
+}
+
 nav a {
+  color: black;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 12px;
 }
 
 main {
-  background-color: gray;
-  padding: 20px;
+  padding: 10px;
 }
 
 #filter {
-  background-color: green;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#filter button{
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin-left: 20px;
 }
 
 #items {
