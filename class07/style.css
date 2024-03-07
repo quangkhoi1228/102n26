@@ -1,0 +1,39 @@
+header {
+  background-color: white;
+}
+
+nav {
+  float: right;
+  height: 30px;
+}
+
+.logo-image {
+  height: 30px;
+}
+
+nav a {
+}
+
+main {
+  background-color: gray;
+  padding: 20px;
+}
+
+#filter {
+  background-color: green;
+}
+
+#items {
+  background-color: blue;
+}
+
+/* trình duyệt có 1 style mặc định: 
+vd: body{
+  padding: 10px; // mặc định của trình duyệt
+}
+
+==> loại bỏ các style mặc định này đi 
+
+====> dùng reset CSS : xoá các style mặc định đi 
+
+*/
