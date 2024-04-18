@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm kiếm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <nav class="searchContainer">
+    <input type="text" id="searchInput" placeholder="Nhập từ khóa...">
+    <button id="searchButton">Tìm kiếm</button>
+  </nav>
+
+  <ol id="members" class="members">
+    <li>Khôi</li>
+    <li>Hoàng</li>
+    <li>Huy</li>
+    <li>Tài</li>
+    <li>Trí</li>
+  </ol>
+
+
+
+  <script>
+
+    // chọn ra phần tử
+    let searchButton = document.getElementById("searchButton");
+
+    let searchInput = document.getElementById("searchInput");
+
+    // chọn ra danh sách các item
+    let members = document.getElementsByTagName('li');
+
+
+    // display: none
+    // thêm sự kiện onClick cho nút
+    searchButton.onclick = function () {
+
+      const keywords = searchInput.value.toLowerCase();
+
+      for (let i = 0; i < members.length; i++) {
+        const member = members[i];
+
+        // lấy nội dung ở trong thẻ li
+        const memberContent = member.innerHTML.toLowerCase();
+
+        // kiểm tra nội dung có chứa keywords không
+        // có thì set display thành list-item
+        // nếu không thì set display thành none
+
+
+        if (memberContent.includes(keywords)) {
+          member.style.display = 'list-item';
+        } else {
+          member.style.display = 'none';
+        }
+      }
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>

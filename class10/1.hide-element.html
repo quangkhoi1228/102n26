@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ẩn hiện giao diện</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <input type="text" id="searchInput" placeholder="Nhập từ khóa...">
+
+  <button id="hiddenButton">Ẩn</button>
+  <button id="showButton">Hiện</button>
+
+
+  <script>
+
+    // chọn ra phần tử
+    var hiddenButton = document.getElementById("hiddenButton");
+    var showButton = document.getElementById("showButton");
+
+    var searchInput = document.getElementById("searchInput");
+
+    // display: none
+    // thêm sự kiện onClick cho nút
+    hiddenButton.onclick = function () {
+      searchInput.style.display = 'none';
+    }
+
+
+    showButton.onclick = function () {
+      searchInput.style.display = 'inline-block';
+    }
+
+
+
+  </script>
+</body>
+
+</html>
